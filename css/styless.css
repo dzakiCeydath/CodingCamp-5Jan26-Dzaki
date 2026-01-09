@@ -106,3 +106,23 @@ th, td {
   padding: 5px 8px;
   font-size: 12px;
 }
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 13px;
+  color: #94a3b8;
+  opacity: 0.9;
+}
+
+.footer p {
+  margin: 4px 0;
+}
+
+.footer strong {
+  color: #a5b4fc;
+}
