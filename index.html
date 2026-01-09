@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List - Dzaki</title>
-
-    <!-- CSS External -->
-    <link rel="stylesheet" href= "css\styless.css">
+  <meta charset="UTF-8">
+  <title>To-do List Dzaki</title>
+  <link rel="stylesheet" href="css\styless.css">
 </head>
-
 <body>
 
-    <!-- header Content -->
-    <header></header>
+<div class="container">
+  <h2>Todo List</h2>
 
-    <!-- main Content -->
-    <main></main>
+  <div class="input-group">
+    <input type="text" id="taskInput" placeholder="Add a todo...">
+    <input type="date" id="dateInput">
+    <button id="addBtn">+</button>
+  </div>
 
-    <!-- footer Content -->
-    <footer></footer>
+  <div class="actions">
+    <button id="filterBtn">Filter</button>
+    <button id="deleteAllBtn" class="danger">Delete All</button>
+  </div>
 
-   <!-- JS External -->
-    <script src="js\script.js"></script>
-    
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Due Date</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="todoBody">
+      <tr>
+        <td colspan="4" class="empty">No task found</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
+<script src="js/script.js"></script>
 </body>
 </html>
